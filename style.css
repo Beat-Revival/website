@@ -40,14 +40,12 @@ footer {
 #nav {
     float: left;
     font-family: 'Poppins', sans-serif;
-    border: 1px solid #121314;
-    border-top: 1px solid #2b2e30;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 0px;
     overflow: hidden;
     width:100%;
-    position: fixed;
+    position: relative;
     top: 0;
 }
 
@@ -56,7 +54,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
 li {
@@ -67,13 +64,19 @@ li a {
   display: block;
   color: white;
   text-align: center;
+  text-size-adjust: auto;
   padding: 14px 16px;
   text-decoration: none;
 }
 
+@keyframes tabhover {
+  to {background-color: #fd0000;}
+}
+
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #fd0000;
+  animation: tabhover 0.3s;
+  animation-fill-mode: forwards;
 }
 
 #titletext {
