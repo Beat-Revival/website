@@ -6,7 +6,7 @@
     z-index: -1;
     width: 100%;
     height: 100%;
-    filter:brightness(0.75) blur(15px);
+    filter: brightness(0.75) blur(15px);
 }
 
 body {
@@ -31,12 +31,13 @@ footer {
   overflow: hidden; /* Hide overflow content */
 }
 
+.desc.dark {
+  background-color: #040d12;
+  color: white;
+}
 .desc img {
   max-width: 100%; /* Ensure images don't stretch beyond their original size */
 }
-
-
-
 
 #nav {
     float: left;
@@ -70,6 +71,8 @@ li a {
   text-decoration: none;
 }
 
+
+
 @keyframes tabhover {
   to {background-color: #fd0000;}
 }
@@ -97,4 +100,9 @@ li a:hover {
     -moz-text-fill-color: transparent;
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
+}
+
+body.dark {
+  background-color: #040d12;
+  color: white;
 }
