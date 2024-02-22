@@ -1,5 +1,3 @@
-console.log("Theme switcher initialised");
-
 function setDarkTheme(darkTheme) {
     if (darkTheme) {
         document.querySelectorAll(".desc").forEach((element) => {
