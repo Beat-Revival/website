@@ -28,7 +28,6 @@ footer {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   box-sizing: border-box;
-  overflow: hidden; /* Hide overflow content */
 }
 
 .desc.dark {
@@ -90,7 +89,7 @@ li a:hover {
 #titletext {
     height: 100px;
     text-align: center;
-    padding-top: 2.5%;
+    padding-top: 6%;
     background-image: linear-gradient(45deg, #ff0000, #c70000);
     background-size: 100%;
     background-clip: text;
@@ -100,6 +99,7 @@ li a:hover {
     -moz-text-fill-color: transparent;
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
+    max-width: 100%;
 }
 
 body.dark {
